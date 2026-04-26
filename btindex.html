@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bagwan Transports – Fast, Reliable & Affordable Goods Transport</title>
+  <meta name="description" content="Bagwan Transports – Professional cargo & goods transport service in Osmanabad, Maharashtra. Licensed driver, legal documents. Book on WhatsApp." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Orbitron (display) + Rajdhani (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-truck">
+        <div class="truck-body"></div>
+        <div class="truck-cab"></div>
+        <div class="truck-wheel w1"></div>
+        <div class="truck-wheel w2"></div>
+        <div class="truck-exhaust"></div>
+        <div class="truck-smoke s1"></div>
+        <div class="truck-smoke s2"></div>
+        <div class="truck-smoke s3"></div>
+      </div>
+      <div class="loader-road">
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+      </div>
+      <div class="loader-text">
+        <span class="loader-brand">BAGWAN TRANSPORTS</span>
+        <span class="loader-sub">Initializing Route...</span>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SCROLL PROGRESS ========== -->
+  <div id="scroll-progress" class="scroll-progress">
+    <div class="scroll-fill" id="scroll-fill"></div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">BAGWAN<em>TRANSPORTS</em></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#vehicle" class="nav-link">Vehicle</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/917588522807" target="_blank" class="nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+
+    <!-- 3D Background Canvas -->
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+    <!-- Animated Road Lines -->
+    <div class="road-bg">
+      <div class="road-stripe" style="--d:0.0s"></div>
+      <div class="road-stripe" style="--d:0.3s"></div>
+      <div class="road-stripe" style="--d:0.6s"></div>
+      <div class="road-stripe" style="--d:0.9s"></div>
+      <div class="road-stripe" style="--d:1.2s"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Grid Overlay -->
+    <div class="hero-grid"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content" id="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Osmanabad, Maharashtra</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line t1">BAGWAN</span>
+        <span class="title-line t2">TRANSPORTS</span>
+      </h1>
+      <p class="hero-tagline">
+        <span class="tag-word">Fast</span>
+        <span class="tag-sep">•</span>
+        <span class="tag-word">Reliable</span>
+        <span class="tag-sep">•</span>
+        <span class="tag-word">Affordable</span>
+        <br/><span class="tag-sub">Goods Transport</span>
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/917588522807" target="_blank" class="btn-primary" id="hero-cta">
+          <span class="btn-bg"></span>
+          <span class="btn-icon">💬</span>
+          <span class="btn-text">Book Now on WhatsApp</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#services" class="btn-secondary">
+          <span>View Services</span>
+          <span class="btn-chevron">↓</span>
+        </a>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">₹300</span>
+          <span class="stat-label">Local (≤5 km)</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">₹45</span>
+          <span class="stat-label">Per KM Long Distance</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">WhatsApp Booking</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating 3D Truck Illustration -->
+    <div class="hero-vehicle" id="hero-vehicle">
+      <div class="vehicle-glow"></div>
+      <div class="vehicle-3d">
+        <div class="v-body">
+          <div class="v-cargo">
+            <div class="v-logo-plate">BT</div>
+            <div class="v-stripes">
+              <div class="v-stripe"></div>
+              <div class="v-stripe"></div>
+              <div class="v-stripe"></div>
+            </div>
+          </div>
+          <div class="v-cab">
+            <div class="v-window"></div>
+            <div class="v-headlight"></div>
+            <div class="v-bumper"></div>
+          </div>
+        </div>
+        <div class="v-undercarriage">
+          <div class="v-wheel vw1"><div class="v-tire"><div class="v-rim"></div></div></div>
+          <div class="v-wheel vw2"><div class="v-tire"><div class="v-rim"></div></div></div>
+          <div class="v-wheel vw3"><div class="v-tire"><div class="v-rim"></div></div></div>
+          <div class="v-shadow"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section id="services" class="services section-pad">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+        <p class="section-desc">Transparent pricing with no hidden charges. Licensed & trusted transport across Maharashtra.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Local Service Card -->
+        <div class="service-card tilt-card" data-aos data-aos-delay="100">
+          <div class="card-glow"></div>
+          <div class="card-inner">
+            <div class="card-icon-wrap">
+              <div class="card-icon">🚐</div>
+              <div class="icon-ring"></div>
+            </div>
+            <div class="card-badge">Most Popular</div>
+            <h3 class="card-title">Local Service</h3>
+            <div class="card-price">
+              <span class="price-currency">₹</span>
+              <span class="price-value">300</span>
+              <span class="price-unit">flat</span>
+            </div>
+            <p class="card-range">Up to <strong>5 km</strong> radius</p>
+            <ul class="card-features">
+              <li><span class="feat-icon">✓</span> Quick door-to-door pickup</li>
+              <li><span class="feat-icon">✓</span> City & town coverage</li>
+              <li><span class="feat-icon">✓</span> Safe goods handling</li>
+              <li><span class="feat-icon">✓</span> Osmanabad local routes</li>
+            </ul>
+            <a href="https://wa.me/917588522807?text=Hi%20Saad%2C%20I%20need%20a%20local%20transport%20(up%20to%205%20km)%20in%20Osmanabad." target="_blank" class="card-cta">
+              Book Local Trip
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Long Distance Card -->
+        <div class="service-card service-card--featured tilt-card" data-aos data-aos-delay="200">
+          <div class="card-glow"></div>
+          <div class="featured-shine"></div>
+          <div class="card-inner">
+            <div class="card-icon-wrap">
+              <div class="card-icon">🚛</div>
+              <div class="icon-ring"></div>
+            </div>
+            <div class="card-badge card-badge--gold">Long Distance</div>
+            <h3 class="card-title">Highway Trips</h3>
+            <div class="card-price">
+              <span class="price-currency">₹</span>
+              <span class="price-value">45</span>
+              <span class="price-unit">/km</span>
+            </div>
+            <p class="card-range">Any distance <strong>beyond 5 km</strong></p>
+            <ul class="card-features">
+              <li><span class="feat-icon">✓</span> Inter-city transport</li>
+              <li><span class="feat-icon">✓</span> Maharashtra-wide coverage</li>
+              <li><span class="feat-icon">✓</span> Real-time WhatsApp updates</li>
+              <li><span class="feat-icon">✓</span> Bulk & heavy goods</li>
+            </ul>
+            <a href="https://wa.me/917588522807?text=Hi%20Saad%2C%20I%20need%20a%20long%20distance%20transport%20at%20%E2%82%B945%2Fkm." target="_blank" class="card-cta card-cta--featured">
+              Book Long Trip
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Booking Info Card -->
+        <div class="service-card service-card--info tilt-card" data-aos data-aos-delay="300">
+          <div class="card-glow"></div>
+          <div class="card-inner">
+            <div class="card-icon-wrap">
+              <div class="card-icon">📱</div>
+              <div class="icon-ring"></div>
+            </div>
+            <h3 class="card-title">Easy Booking</h3>
+            <p class="card-info-text">Book your transport in under a minute via WhatsApp. No app downloads, no forms.</p>
+            <div class="steps">
+              <div class="step"><span class="step-num">01</span><span>Click WhatsApp</span></div>
+              <div class="step"><span class="step-num">02</span><span>Share location & goods</span></div>
+              <div class="step"><span class="step-num">03</span><span>Confirm & done</span></div>
+            </div>
+            <a href="https://wa.me/917588522807" target="_blank" class="card-cta">
+              Chat Now
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VEHICLE SHOWCASE ========== -->
+  <section id="vehicle" class="vehicle-section section-pad">
+    <div class="vehicle-bg-line"></div>
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-label">Our Fleet</span>
+        <h2 class="section-title">The <span class="highlight">Vehicle</span></h2>
+        <p class="section-desc">Modern cargo vehicles built for efficiency, reliability, and safe goods delivery.</p>
+      </div>
+
+      <div class="vehicle-showcase">
+        <!-- Main Vehicle Card -->
+        <div class="vehicle-main tilt-card" data-aos>
+          <div class="vm-glow"></div>
+          <div class="vm-content">
+            <div class="vm-label">Primary Fleet</div>
+            <h3 class="vm-name">Bajaj Maxima</h3>
+            <p class="vm-type">Cargo Carrier · Three-Wheeler</p>
+            <!-- CSS Illustrated Vehicle -->
+            <div class="css-vehicle">
+              <div class="cv-body">
+                <div class="cv-cargo-box">
+                  <div class="cv-cargo-text">BAGWAN<br>TRANSPORTS</div>
+                  <div class="cv-cargo-stripe"></div>
+                </div>
+                <div class="cv-cabin">
+                  <div class="cv-windshield"></div>
+                  <div class="cv-headlights">
+                    <div class="cv-hl cv-hl1"></div>
+                    <div class="cv-hl cv-hl2"></div>
+                  </div>
+                </div>
+                <div class="cv-chassis">
+                  <div class="cv-wheel cvw1">
+                    <div class="cv-rim"></div>
+                  </div>
+                  <div class="cv-wheel cvw2">
+                    <div class="cv-rim"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vm-specs">
+              <div class="vm-spec">
+                <span class="spec-icon">⚡</span>
+                <span class="spec-label">Fuel Efficient</span>
+              </div>
+              <div class="vm-spec">
+                <span class="spec-icon">📦</span>
+                <span class="spec-label">Heavy Payload</span>
+              </div>
+              <div class="vm-spec">
+                <span class="spec-icon">🛣️</span>
+                <span class="spec-label">City & Highway</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Pills -->
+        <div class="vehicle-features">
+          <div class="vf-item" data-aos data-aos-delay="100">
+            <div class="vf-icon">🔧</div>
+            <div>
+              <h4>Well Maintained</h4>
+              <p>Regular servicing, always road-ready</p>
+            </div>
+          </div>
+          <div class="vf-item" data-aos data-aos-delay="200">
+            <div class="vf-icon">📋</div>
+            <div>
+              <h4>Fully Documented</h4>
+              <p>All legal papers verified & up to date</p>
+            </div>
+          </div>
+          <div class="vf-item" data-aos data-aos-delay="300">
+            <div class="vf-icon">🛡️</div>
+            <div>
+              <h4>Insured Vehicle</h4>
+              <p>Your goods travel with peace of mind</p>
+            </div>
+          </div>
+          <div class="vf-item" data-aos data-aos-delay="400">
+            <div class="vf-icon">📍</div>
+            <div>
+              <h4>GPS-Ready</h4>
+              <p>Trackable, transparent, on-time delivery</p>
+            </div>
+          </div>
+          <div class="vf-item" data-aos data-aos-delay="500">
+            <div class="vf-icon">💨</div>
+            <div>
+              <h4>Quick Turnaround</h4>
+              <p>Efficient loading, fast delivery, no delays</p>
+            </div>
+          </div>
+          <div class="vf-item" data-aos data-aos-delay="600">
+            <div class="vf-icon">🌧️</div>
+            <div>
+              <h4>Weather-Proof</h4>
+              <p>Covered cargo section protects your goods</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Identity Card -->
+        <div class="about-card tilt-card" data-aos>
+          <div class="about-card-bg"></div>
+          <div class="driver-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">SB</div>
+            <div class="avatar-badge">✓</div>
+          </div>
+          <h3 class="driver-name">Saad Bagwan</h3>
+          <p class="driver-title">Owner & Licensed Driver</p>
+          <div class="driver-location">
+            <span>📍</span> Osmanabad, Maharashtra
+          </div>
+          <div class="trust-badges">
+            <div class="trust-badge">
+              <span class="tb-icon">🪪</span>
+              <span>Licensed Driver</span>
+            </div>
+            <div class="trust-badge">
+              <span class="tb-icon">📄</span>
+              <span>Legal Documents</span>
+            </div>
+            <div class="trust-badge">
+              <span class="tb-icon">⭐</span>
+              <span>Trusted Service</span>
+            </div>
+          </div>
+          <div class="about-social">
+            <a href="https://wa.me/917588522807" target="_blank" class="social-btn wa">
+              <span>📱</span> WhatsApp
+            </a>
+            <a href="https://instagram.com/yellow_devil_2945" target="_blank" class="social-btn ig">
+              <span>📸</span> Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: About Text -->
+        <div class="about-content" data-aos data-aos-delay="150">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Why Choose <span class="highlight">Bagwan Transports?</span></h2>
+          <p class="about-text">
+            At Bagwan Transports, we understand that your goods are your priority. 
+            Founded by Saad Bagwan, a fully licensed and experienced transport professional, 
+            we've built our service on three pillars: <strong>Speed, Safety, and Savings.</strong>
+          </p>
+          <p class="about-text">
+            Operating out of Osmanabad, Maharashtra, we proudly serve local residents and businesses 
+            with same-day pickup, transparent pricing, and zero hidden charges.
+          </p>
+
+          <!-- Credibility Stats -->
+          <div class="about-stats">
+            <div class="a-stat" data-aos data-aos-delay="200">
+              <div class="a-stat-num" data-count="100">0</div>
+              <span class="a-stat-plus">%</span>
+              <p>Legal Compliance</p>
+            </div>
+            <div class="a-stat" data-aos data-aos-delay="300">
+              <div class="a-stat-num" data-count="500">0</div>
+              <span class="a-stat-plus">+</span>
+              <p>Trips Completed</p>
+            </div>
+            <div class="a-stat" data-aos data-aos-delay="400">
+              <div class="a-stat-num" data-count="24">0</div>
+              <span class="a-stat-plus">/7</span>
+              <p>Available Booking</p>
+            </div>
+          </div>
+
+          <div class="credibility-list">
+            <div class="cr-item">
+              <div class="cr-icon">🏆</div>
+              <div>
+                <h4>Fully Licensed & Legal</h4>
+                <p>All vehicle documents verified by RTO Maharashtra. Zero penalties record.</p>
+              </div>
+            </div>
+            <div class="cr-item">
+              <div class="cr-icon">🤝</div>
+              <div>
+                <h4>Customer First Always</h4>
+                <p>Direct owner communication — no middlemen, no extra commissions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact section-pad">
+    <div class="contact-glow-orb orb1"></div>
+    <div class="contact-glow-orb orb2"></div>
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Book Your <span class="highlight">Transport</span></h2>
+        <p class="section-desc">Ready to move your goods? Reach us instantly on WhatsApp.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- WhatsApp Card -->
+        <div class="contact-card contact-card--wa tilt-card" data-aos>
+          <div class="contact-card-glow"></div>
+          <div class="cc-icon">💬</div>
+          <h3>WhatsApp Booking</h3>
+          <p>The fastest way to book. Send us your pickup location and we'll confirm instantly.</p>
+          <div class="phone-display">7588522807</div>
+          <a href="https://wa.me/917588522807" target="_blank" class="contact-btn wa-btn">
+            <span class="cbtn-bg"></span>
+            <span>Open WhatsApp Chat</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Call Card -->
+        <div class="contact-card contact-card--call tilt-card" data-aos data-aos-delay="150">
+          <div class="contact-card-glow"></div>
+          <div class="cc-icon">📞</div>
+          <h3>Direct Call</h3>
+          <p>Prefer a call? Reach Saad Bagwan directly. Available during daytime hours.</p>
+          <div class="phone-display">+91 75885 22807</div>
+          <a href="tel:+917588522807" class="contact-btn call-btn">
+            <span>Call Now</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Instagram Card -->
+        <div class="contact-card contact-card--ig tilt-card" data-aos data-aos-delay="300">
+          <div class="contact-card-glow"></div>
+          <div class="cc-icon">📸</div>
+          <h3>Follow on Instagram</h3>
+          <p>Stay updated with our latest trips, availability, and transport stories.</p>
+          <div class="phone-display">@yellow_devil_2945</div>
+          <a href="https://instagram.com/yellow_devil_2945" target="_blank" class="contact-btn ig-btn">
+            <span>Open Instagram</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Location Card -->
+        <div class="contact-card contact-card--loc tilt-card" data-aos data-aos-delay="450">
+          <div class="contact-card-glow"></div>
+          <div class="cc-icon">📍</div>
+          <h3>Our Base</h3>
+          <p>Headquartered in Osmanabad with coverage across Maharashtra.</p>
+          <div class="phone-display">Osmanabad, MH</div>
+          <a href="https://maps.google.com/?q=Osmanabad,Maharashtra,India" target="_blank" class="contact-btn map-btn">
+            <span>View on Maps</span>
+            <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-icon">⬡</span>
+              <span>BAGWAN<em>TRANSPORTS</em></span>
+            </div>
+            <p class="footer-desc">Fast, reliable, and affordable goods transport in Osmanabad, Maharashtra. Licensed. Legal. Trusted.</p>
+            <div class="footer-socials">
+              <a href="https://wa.me/917588522807" target="_blank" class="fs-icon" title="WhatsApp">💬</a>
+              <a href="https://instagram.com/yellow_devil_2945" target="_blank" class="fs-icon" title="Instagram">📸</a>
+              <a href="tel:+917588522807" class="fs-icon" title="Call">📞</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#vehicle">Vehicle</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><span>Local (≤5 km) — ₹300</span></li>
+              <li><span>Long Distance — ₹45/km</span></li>
+              <li><span>WhatsApp Booking</span></li>
+              <li><span>Goods Transport</span></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+917588522807">+91 75885 22807</a></li>
+              <li><a href="https://wa.me/917588522807" target="_blank">WhatsApp Chat</a></li>
+              <li><a href="https://instagram.com/yellow_devil_2945" target="_blank">@yellow_devil_2945</a></li>
+              <li><span>Osmanabad, Maharashtra</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 <strong>Bagwan Transports</strong>. All Rights Reserved. Owner: Saad Bagwan.</p>
+        <p class="footer-tagline">Fast • Reliable • Affordable</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+  <a href="https://wa.me/917588522807" target="_blank" class="float-wa" id="float-wa" title="Chat on WhatsApp">
+    <div class="fwa-pulse"></div>
+    <div class="fwa-icon">💬</div>
+    <span class="fwa-label">Book Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
